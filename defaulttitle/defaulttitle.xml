@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="content" version="5.0" method="upgrade">
+    <name>plg_content_defaulttitle</name>
+    <author>Oshin</author>
+    <version>1.0.0</version>
+    <description>Default Title Plugin for GSoC Test Task</description>
+    <files>
+        <filename plugin="defaulttitle">defaulttitle.php</filename>
+        <filename>script.js</filename>
+    </files>
+    <config>
+    <fields name="params">
+        <fieldset name="basic">
+            <field
+                name="default_title"
+                type="text"
+                label="Default Title"
+                description="The title that will appear by default."
+                default="My Default Title"
+            />
+        </fieldset>
+    </fields>
+</config>
+</extension>
